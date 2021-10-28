@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-3">
+    <div class="card mb-5">
+        <div class="card-header">
+            <h1 class="h4">Payment form example</h1>
+        </div>
+        <div class="card body mt-3 border-0">
+            <div class="container">
+            <div class="alert alert-danger" role="alert">
+                Todos los Campos son obligatorios
+            </div>
+            <form id="form" method="GET">
+                <div class="form-row">
+                  <div class="form-group col-md-5">
+                    <label for="inputCity"><b>Card #</b></label>
+                    <input type="text" class="form-control" name="card" id="inputCard" placeholder="XXXXXXXXXXXXXXXX">
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group col-md-3">
+                    <label for="inputState"><b>CVC #</b></label>
+                    <input type="text" class="form-control" name="cvc" id="inputCvc" placeholder="000">
+                    <span class="error"></span>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputZip"><b>Amount</b></label>
+                    <div class="input-group-prepend">
+                        <div class="input-group-text dolar"><b>$</b></div>
+                        <input type="text" class="form-control" name="amount" id="inputAmount" placeholder="Amount">
+                      </div>
+                      <span class="error"></span>
+                    
+                  </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName"><b>First Name</b></label>
+                         <input type="text" class="form-control" name="firstName" id="inputName">
+                         <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputLastName"><b>Last Name</b></label>
+                         <input type="text" class="form-control" name="lastName" id="inputLastName">
+                         <span class="error"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputCity"><b>City</b></label>
+                         <input type="text" class="form-control" name="city" id="inputCity">
+                         <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputState"><b>State</b></label>
+                         <select id="inputState" name='State' class="form-control">
+                             <option selected>Pick a state</option>
+                             <option>One</option>
+                             <option>Two</option>
+                             <option>Three</option>
+                         </select>
+                         <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="inputPostal"><b>Postal Code</b></label>
+                         <input type="text" class="form-control" name="postal" id="inputPostal"  placeholder="0000000">
+                         <span class="error"></span>
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <legend class="h6 mb-3"><b>We accept:</b></legend>
+                        <a href="#" class="btn btn-secondary">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" value="mastercard" name="pay" id="gridRadios2">
+                            <label class="form-check-label" for="gridRadios2">
+                                <i class="fab fa-cc-mastercard"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="pay" value='visa' id="gridRadios2">
+                            <label class="form-check-label" for="gridRadios2">
+                                <i class="fab fa-cc-visa"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="pay" value="diners" id="gridRadios2">
+                            <label class="form-check-label" for="gridRadios2">
+                                <i class="fab fa-cc-diners-club"></i>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="pay" value="amex"id="gridRadios2">
+                            <label class="form-check-label" for="gridRadios2">
+                                <i class="fab fa-cc-amex"></i>
+                            </label>
+                        </div>
+                        </a>
+                        <span class="error"></span>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCity"><b>Message</b></label>
+                       <textarea class="form-control" name="mensaje" id="" cols="30" rows="3"></textarea>
+                       <span class="error"></span>
+                    </div>
+                </div>
+
+                <div class="buttons d-flex justify-content-end">
+                    <button type="reset" class="btn btn-secondary m-1">Cancel</button>
+                    <button type="submit" class="btn btn-primary m-1">Send</button>
+                </div>
+        
+
+            </form>
+        </div>
+        </div>
+
+    </div>
+    </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
+</body>
+</html>

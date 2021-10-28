@@ -1,0 +1,27 @@
+.dolar{
+    background-color: white;
+    border:none
+}
+
+
+.error{
+    color:red;
+}
+
+.input-correcto:focus{
+    background: greenyellow;
+    border:2px solid green
+}
+
+.input-correcto{
+    border:5px solid green
+}
+
+.input-incorrecto{
+    border:5px solid red;
+}
+
+.input-incorrecto:focus{
+    background:lightsalmon;
+    border:2px solid red;
+}

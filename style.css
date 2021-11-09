@@ -5,7 +5,7 @@
 
 
 .error{
-    color:red;
+    color:pink;
 }
 
 .input-correcto:focus{
@@ -18,10 +18,10 @@
 }
 
 .input-incorrecto{
-    border:5px solid red;
+    border:5px solid palevioletred;
 }
 
 .input-incorrecto:focus{
-    background:lightsalmon;
-    border:2px solid red;
+    background:lightpink;
+    border:2px solid darkpink;
 }
